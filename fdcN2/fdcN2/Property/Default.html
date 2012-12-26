@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>房地产数据库DEMO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="../united/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="../css/bootswatch.css" rel="stylesheet">
+    <link href="../css/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
+    <link href="../third-party/jQuery-UI-Date-Range-Picker/css/ui.daterangepicker.css" media="screen" rel="Stylesheet" type="text/css" />
+    <!-- Le styles -->
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- Fav and touch icons -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><style type="text/css">
+<!--
+body,td,th {
+	font-size: 12px;
+	font-family: Verdana, Geneva, sans-serif;
+}
+-->
+</style></head>
+<body>
+    <!-- topbar starts -->
+    <div class="navbar-fixed-top">
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span
+                    class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                </a>
+                <!--          <a class="brand" href="#">房地产数据库</a>-->
+                <div class="nav-collapse collapse navbar-responsive-collapse">
+                    <ul class="nav">
+                        <li ><a href="#">首页</a></li>
+                        <li><a href="#about">主要经济指标</a></li>
+                        <li><a href="#contact">规划数据</a></li>
+                        <li><a href="#contact">土地数据</a></li>
+                        <li class="dropdown" ><a href="#" class="dropdown-toggle" data-toggle="dropdown">楼盘数据
+                            <b class="caret"></b></a>
+                             <ul class="dropdown-menu">
+                                <li><a href="#">楼盘数据查询</a></li>
+                                <li><a href="#">上市和销售数据</a></li>
+                                <li><a href="#">预售许可证数据</a></li>
+                                <li><a href="#">供销排行榜</a></li>
+                                <li><a href="#">供销统计</a></li>
+                                <li><a href="#">对比分析</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#contact">商务数据</a></li>
+                        <li><a href="#contact">商业数据</a></li>
+                        <li><a href="#contact">预警系统</a></li>
+                        <li><a href="#contact">指数</a></li>
+                        <li><a href="#contact">媒体数据</a></li>
+                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">设置 <b
+                            class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">个人设置</a></li>
+                                <li><a href="#">系统设置</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">退出</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- user dropdown ends -->
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </div>
+        <!-- /navbar-inner -->
+    </div>
+    
+    <div class="subnav">
+    <div class="container">
+    <ul class="nav nav-pills">
+      <li ><a href="#typography">楼盘数据</a></li>
+      <li class="active"><a href="#navbar">楼盘数据查询</a></li>
+      <li><a href="#">上市和销售数据</a></li>
+      <li><a href="#">预售许可证数据</a></li>
+      <li><a href="#">供销排行榜</a></li>
+      <li><a href="#">供销统计</a></li>
+      <li><a href="#">对比分析</a></li>
+    </ul>
+    </div>
+  </div>
+    
+    </div>
+   
+ <!-- /navbar -->
+    <!-- topbar ends -->
+    <div class="container">
+       <section id="forms">
+  <div class="page-header">
+    <h4>楼盘数据查询</h4>
+  </div>
+
+  <div class="row">
+    <div class="span12">
+   
+    <ul class="nav nav-tabs" id="myTab">
+        <li class="active" ><a href="#ks" data-toggle="tab">快速查询</a></li>
+        <li><a href="#gj" data-toggle="tab">高级查询</a></li>
+        <li><a href="#dt" data-toggle="tab">地图查询</a></li>
+        <li><a href="#ls" data-toggle="tab">历史查询</a></li>
+    </ul>
+    
+<div class="tab-content">
+  <div class="tab-pane active" id="ks">
+
+   <form class="form-horizontal bs-docs-example">
+        <fieldset>
+          <div class="control-group">
+            <label class="control-label" for="input01">楼盘名称：</label>
+            <div class="controls">
+              <input type="text" class="input-medium" id="input01">
+              <button type="submit" class="btn btn-primary">查询</button>
+             <button type="reset" class="btn">重置</button>
+            </div>
+          </div>
+        </fieldset>
+   </form>
+  </div>
+  <div class="tab-pane" id="gj">
+  <form class="form-horizontal bs-docs-example">
+        <fieldset>
+        
+        <div class="row-fluid">
+         	<div class="control-group span4 ">
+                 	<label class="control-label" >项目名称：</label>
+                <div class="controls ">
+                      <input type="text" class="input-medium"  style="width:100%" >
+                 </div>
+            </div>
+         	<div class="control-group span4">
+                 	<label class="control-label" >项目地址：</label>
+               <div class="controls ">
+                      <input type="text" class="input-medium"  style="width:100%" >
+                 </div>
+            </div>
+            <div class="control-group span4">
+                 	<label class="control-label" >所在区域：</label>
+                <div class="controls ">
+                      <input type="text" class="input-medium"  style="width:100%" >
+                 </div>
+            </div>
+         </div>
+         
+         <div class="row-fluid">
+         	<div class="control-group span4">
+                 	<label class="control-label" >开发商：</label>
+               <div class="controls ">
+                      <input type="text" class="input-medium"  style="width:100%" >
+                 </div>
+            </div>
+         	<div class="control-group span4">
+                 	<label class="control-label" >成交面积：</label>
+             <div class="controls ">
+                      <input type="text" class="input-medium"  style="width:100%" >
+                 </div>
+            </div>
+            <div class="control-group span4">
+                 	<label class="control-label" >成交套数：</label>
+                <div class="controls ">
+                      <input type="text" class="input-medium"  style="width:100%" >
+                 </div>
+            </div>
+         </div>
+           <div class="row-fluid">
+         	<div class="control-group span4">
+                 	<label class="control-label" >成交金额：</label>
+               <div class="controls ">
+                      <input type="text" class="input-medium"  style="width:100%" >
+                 </div>
+            </div>
+         	<div class="control-group span4">
+                 	<label class="control-label" >成交均价：</label>
+               <div class="controls ">
+                      <input type="text" class="input-medium"  style="width:100%" >
+                 </div>
+            </div>
+            <div class="control-group span4">
+                 	<label class="control-label" >所在地块：</label>
+               <div class="controls ">
+                      <input type="text" class="input-medium"  style="width:100%" >
+                 </div>
+            </div>
+         </div>
+           <div class="row-fluid">
+         	<div class="control-group span6 row-fluid">
+                 	<label class="control-label" >预售许可面积：</label>
+               <div class="controls ">
+                      <input type="text" class="input-medium"  style="width:100%" >
+                 </div>
+            </div>
+         	<div class="control-group span6 row-fluid">
+                 	<label class="control-label" >预售许可证号：</label>
+              <div class="controls ">
+                      <input type="text" class="input-medium"  style="width:100%" >
+                 </div>
+            </div>
+          </div> 
+         <div class="row-fluid">
+         	<div class="control-group span6 row-fluid">
+                 	<label class="control-label" >成交日起：</label>
+                <div class="controls ">
+                      <input type="text" class="input-medium"  style="width:100%" id="rangeA" >
+                 </div>
+            </div>
+         	<div class="control-group span6 row-fluid">
+                 	<label class="control-label" >预售审批日期：</label>
+              <div class="controls ">
+                      <input type="text" class="input-medium"  style="width:100%" id="rangeB" >
+                 </div>
+            </div>
+          </div> 
+         
+            
+        
+        
+        
+          <div class="control-group">
+            <label class="control-label" >环线位置：</label>
+            <div class="controls">
+               <div id="checkbox_hxwz">
+                  <input type="checkbox" id="checkbox_hxwz1" name="checkbox_hxwz" /><label for="checkbox_hxwz1">一环内</label>
+                  <input type="checkbox" id="checkbox_hxwz2" name="checkbox_hxwz" /><label for="checkbox_hxwz2">一环至二环</label>
+                  <input type="checkbox" id="checkbox_hxwz3" name="checkbox_hxwz" /><label for="checkbox_hxwz3">二环至三环</label>
+                  <input type="checkbox" id="checkbox_hxwz4" name="checkbox_hxwz" /><label for="checkbox_hxwz4">三环外</label>
+                </div>
+            </div>
+          </div>
+                    <div class="control-group">
+            <label class="control-label" >建筑形式：</label>
+            <div class="controls">
+               <div id="checkbox_jzxs">
+                  <input type="checkbox" id="checkbox_jzxs1" name="checkbox_jzxs" /><label for="checkbox_jzxs1">独栋别墅</label>
+                  <input type="checkbox" id="checkbox_jzxs2" name="checkbox_jzxs" /><label for="checkbox_jzxs2">双拼</label>
+                  <input type="checkbox" id="checkbox_jzxs3" name="checkbox_jzxs" /><label for="checkbox_jzxs3">叠拼</label>
+                  <input type="checkbox" id="checkbox_jzxs4" name="checkbox_jzxs" /><label for="checkbox_jzxs4">联排</label>
+                  <input type="checkbox" id="checkbox_jzxs5" name="checkbox_jzxs" /><label for="checkbox_jzxs5">洋房</label>
+                  <input type="checkbox" id="checkbox_jzxs6" name="checkbox_jzxs" /><label for="checkbox_jzxs6">多层</label>
+                  <input type="checkbox" id="checkbox_jzxs7" name="checkbox_jzxs" /><label for="checkbox_jzxs7">小高层</label>
+                  <input type="checkbox" id="checkbox_jzxs8" name="checkbox_jzxs" /><label for="checkbox_jzxs8">高层</label>
+                  <input type="checkbox" id="checkbox_jzxs9" name="checkbox_jzxs" /><label for="checkbox_jzxs9">超高层</label>
+                </div>
+            </div>
+          </div>
+           <div class="control-group">
+            <label class="control-label" >产品属性：</label>
+            <div class="controls">
+               <div id="checkbox_cpsx">
+                  <input type="checkbox" id="checkbox_cpsx1" name="checkbox_cpsx" /><label for="checkbox_cpsx1">车库</label>
+                  <input type="checkbox" id="checkbox_cpsx2" name="checkbox_cpsx" /><label for="checkbox_cpsx2">网点</label>
+                  <input type="checkbox" id="checkbox_cpsx3" name="checkbox_cpsx" /><label for="checkbox_cpsx3">住宅</label>
+                  <input type="checkbox" id="checkbox_cpsx4" name="checkbox_cpsx" /><label for="checkbox_cpsx4">公寓</label>
+                  <input type="checkbox" id="checkbox_cpsx5" name="checkbox_cpsx" /><label for="checkbox_cpsx5">写字间</label>
+                  <input type="checkbox" id="checkbox_cpsx6" name="checkbox_cpsx" /><label for="checkbox_cpsx6">酒店</label>
+                  <input type="checkbox" id="checkbox_cpsx7" name="checkbox_cpsx" /><label for="checkbox_cpsx7">专业市场</label>
+                  <input type="checkbox" id="checkbox_cpsx8" name="checkbox_cpsx" /><label for="checkbox_cpsx8">公建</label>
+                  <input type="checkbox" id="checkbox_cpsx9" name="checkbox_cpsx" /><label for="checkbox_cpsx9">其他</label>
+                </div>
+            </div>
+          </div>
+           <div class="control-group">
+            <label class="control-label" >面积区间：</label>
+            <div class="controls">
+               <div id="checkbox_mjqj">
+                  <input type="checkbox" id="checkbox_mjqj1" name="checkbox_mjqj" /><label for="checkbox_mjqj1">60以下</label>
+                  <input type="checkbox" id="checkbox_mjqj2" name="checkbox_mjqj" /><label for="checkbox_mjqj2">60-80平</label>
+                  <input type="checkbox" id="checkbox_mjqj3" name="checkbox_mjqj" /><label for="checkbox_mjqj3">80-100平</label>
+                  <input type="checkbox" id="checkbox_mjqj4" name="checkbox_mjqj" /><label for="checkbox_mjqj4">120-144平</label>
+                  <input type="checkbox" id="checkbox_mjqj5" name="checkbox_mjqj" /><label for="checkbox_mjqj5">144-180平</label>
+                  <input type="checkbox" id="checkbox_mjqj6" name="checkbox_mjqj" /><label for="checkbox_mjqj6">180平-220平</label>
+                  <input type="checkbox" id="checkbox_mjqj7" name="checkbox_mjqj" /><label for="checkbox_mjqj7">220-260平</label>
+                  <input type="checkbox" id="checkbox_mjqj8" name="checkbox_mjqj" /><label for="checkbox_mjqj8">260-300平</label>
+                  <input type="checkbox" id="checkbox_mjqj9" name="checkbox_mjqj" /><label for="checkbox_mjqj9">300平以上</label>
+                </div>
+            </div>
+          </div>
+           <div class="control-group">
+            <label class="control-label" >户型：</label>
+            <div class="controls">
+               <div id="checkbox_hx">
+                  <input type="checkbox" id="checkbox_hx1" name="checkbox_hx" /><label for="checkbox_hx1">一室</label>
+                  <input type="checkbox" id="checkbox_hx2" name="checkbox_hx" /><label for="checkbox_hx2">两室</label>
+                  <input type="checkbox" id="checkbox_hx3" name="checkbox_hx" /><label for="checkbox_hx3">三室</label>
+                  <input type="checkbox" id="checkbox_hx4" name="checkbox_hx" /><label for="checkbox_hx4">四室</label>
+                  <input type="checkbox" id="checkbox_hx5" name="checkbox_hx" /><label for="checkbox_hx5">五室</label>
+                  <input type="checkbox" id="checkbox_hx6" name="checkbox_hx" /><label for="checkbox_hx6">五室以上</label>
+                </div>
+            </div>
+          </div>
+           <div class="control-group">
+            <label class="control-label" >行政区域：</label>
+            <div class="controls">
+               <div id="checkbox_xzqy">
+                  <input type="checkbox" id="checkbox_xzqy1" name="checkbox_xzqy" /><label for="checkbox_xzqy1">大东区区</label>
+                  <input type="checkbox" id="checkbox_xzqy2" name="checkbox_xzqy" /><label for="checkbox_xzqy2">和平区</label>
+                  <input type="checkbox" id="checkbox_xzqy3" name="checkbox_xzqy" /><label for="checkbox_xzqy3">皇姑区</label>
+                  <input type="checkbox" id="checkbox_xzqy4" name="checkbox_xzqy" /><label for="checkbox_xzqy4">沈河区</label>
+                  <input type="checkbox" id="checkbox_xzqy5" name="checkbox_xzqy" /><label for="checkbox_xzqy5">铁西区</label>
+                  <input type="checkbox" id="checkbox_xzqy6" name="checkbox_xzqy" /><label for="checkbox_xzqy6">浑南新区</label>
+                  <input type="checkbox" id="checkbox_xzqy7" name="checkbox_xzqy" /><label for="checkbox_xzqy7">于洪区</label>
+                  <input type="checkbox" id="checkbox_xzqy8" name="checkbox_xzqy" /><label for="checkbox_xzqy8">苏家屯区</label>
+                  <input type="checkbox" id="checkbox_xzqy9" name="checkbox_xzqy" /><label for="checkbox_xzqy9">东陵区</label>
+                  <input type="checkbox" id="checkbox_xzqy10" name="checkbox_xzqy" /><label for="checkbox_xzqy10">沈北新区</label>
+                </div>
+            </div>
+          </div>
+      
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">查询</button>
+            <button type="reset" class="btn">重置</button>
+          </div>
+        </fieldset>
+      </form>
+  </div>
+  <div class="tab-pane" id="dt">...</div>
+  <div class="tab-pane" id="ls">...</div>
+
+    </div>
+	
+    
+    </div>
+  </div>
+
+</section>
+        <hr>
+        <footer>
+        <p class="pull-left">&copy; Company 2012</p>
+      </footer>
+    </div>
+    <!--/.fluid-container-->
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="../js/jquery.min.js"></script>
+
+    <script src="../js/bootstrap.min.js"></script>
+    
+    
+    <script src="../js/bootswatch.js"></script>
+    
+    <script src="../js/jquery-ui-1.8.16.custom.min.js"></script>
+    
+    <!--daterangepicker-->
+        <script type="text/javascript" src="../third-party/jQuery-UI-Date-Range-Picker/js/date.js"></script>
+        <script type="text/javascript" src="../third-party/jQuery-UI-Date-Range-Picker/js/daterangepicker.jQuery.js"></script>
+
+        <!--wijmo-->
+        <script src="../third-party/wijmo/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="../third-party/wijmo/jquery.bgiframe-2.1.3-pre.js" type="text/javascript"></script>
+        <script src="../third-party/wijmo/jquery.wijmo-open.1.5.0.min.js" type="text/javascript"></script>
+
+
+        <!-- FileInput -->
+        <script src="../third-party/jQuery-UI-FileInput/js/enhance.min.js" type="text/javascript"></script>
+        <script src="../third-party/jQuery-UI-FileInput/js/fileinput.jquery.js" type="text/javascript"></script>
+
+    <script src="../js/application.js"></script>
+    </body>
+
+</html>
